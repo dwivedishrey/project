@@ -1,0 +1,30 @@
+{% load static %}
+<head>
+<body>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="static/style.css">
+</head>
+<div class="u" style="height:1500;">
+  <h1 class="sh" >Total Number of Students  Absent in Class </h1><br>
+  <h1 class="se" style="padding-top:10px;">{{total}}</h1>
+{% for item in name %}
+     {%csrf_token%}
+               <p class="st" style="padding-top:0px;">{{ item.name }}</p>
+
+           {% endfor %}
+{% for item in phone %}
+                {%csrf_token%}
+                          <p class="st" style="padding-top:0px;">{{ item.phone }}</p>
+
+                      {% endfor %}
+
+</div>
+<div id="output"></div>
+
+<script src="static/index.js"></script>
+</body>

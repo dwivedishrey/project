@@ -1,0 +1,81 @@
+.*{
+  margin: 0;
+  overflow: hidden;
+}
+body{
+  margin: 0;
+  display:flex;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+.design{
+  width:400px;
+  background-color:#1C2B60;
+  height: 100%;
+}
+.design1{
+  padding-left:220px;
+}
+.design2{
+  padding-top:55px;
+  padding-right:50px;
+}
+.text{
+  color: white;
+  padding-top: 180px;
+  padding-left: 50px;
+
+}
+.text .logo{
+  padding-left: 120px;
+  padding-top: 10px;
+  justify-content: center;
+  height: 60px;
+  width: 60px;
+}
+.form{
+  padding-top: 50px;
+  padding-left: 150px;
+  align-items: center;
+
+}
+.staff{
+  align-items: center;
+  padding-left: 270px;
+}
+.input_fields{
+  padding-top: 35px;
+  padding-left: 130px;
+}
+input{
+  padding: 12px;
+  margin: 15px;
+  padding-right: 140px;
+  padding-left: 50px;
+  display: flex;
+  flex-direction: row;
+  border-radius: 25px;
+  font-size: 15px;
+}
+.submit{
+  border-radius: 0;
+  background-color: #1C2B60;
+  color: white;
+  font-size: 20px;
+  padding-left: 60px;
+  padding-right: 60px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin-left: 100px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+.input_fields a{
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+.input_fields p{
+  padding-left: 100px;
+}

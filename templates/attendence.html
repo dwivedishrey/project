@@ -1,0 +1,22 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>attendence</title
+      <link rel="stylesheet" type="text/css" href="{% static '/css/attendence.css'%}">
+  </head>
+  <body>
+<form method="POST" action="taken">
+
+    {% for app in one %}'
+    {% csrf_token %}'
+                    <input type="checkbox" name="items[]"  id="hello" class="form-check-input" value="{{ app.pk }}">
+
+                    <label class="form-check-label" id="hello1">{{ app.roll }}</label>  <label id="hello2" class="form-check-label">{{ app.name }}</label><br>
+                {% endfor %}
+                  <button class="btn btn-dark mt-5" style="padding:10px; margin-left: 200px;color:white;">Submit</button>
+     </form>
+
+  </body>
+</html>

@@ -1,0 +1,53 @@
+.*{
+  margin: 0;
+  overflow: hidden;
+}
+body{
+  background-color: #1C2B60;
+  height: 100%;
+  width:100%;
+  overflow: hidden;
+
+}
+.container{
+  position: relative;
+  width: 400px;
+  height: 40px;
+}
+.image{
+  margin: -10px;
+
+}
+.image2{
+  padding-left: 450px;
+  margin-left: 750px;
+  margin-top: -50px;
+  position: absolute;
+
+
+}
+nav{
+  margin: 0;
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+a{
+  color: white;
+  padding-left: 270px;
+  font-size: 30px;
+  font-style:open sans;
+  text-decoration: none;
+}
+.girl{
+  padding-top: 228px;
+  padding-left: 918px;
+
+}
+.text{
+  color: white;
+  padding-left: 200px;
+  padding-top: 220px;
+  position: absolute;
+}

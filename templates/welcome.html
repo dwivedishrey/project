@@ -1,0 +1,71 @@
+{% load static %}
+<html>
+
+<head>
+<link rel="stylesheet" type="text/css" href="{% static '/css/welcome.css'%}">
+<script src="{% static '/js/welcome.js'%}" charset="utf-8"></script>
+</head>
+<body>
+<div class="rectangle">
+
+</div>
+<div class="navbar">
+<nav class="nav">
+<a href="/">Home</a>
+<a  href="/register">Register</a>
+<a href="/login">Login</a>
+</nav>
+</div>
+<div class="text">
+  {% csrf_token %}
+  <h1>Welcome</h1>
+  <p>Get started with our Attendence Management System today and experience hassle-free <br>attendence tracking,improved efficiency and accurate record-keeping.</p>
+
+
+</div>
+<div class="text2">
+  <form action="attendence">
+    <div class="date">
+  <h2>Select Date:</h2>
+  <input type="date" name="" value="">
+</div>
+
+  <!--<div class="dropdown" data-dropdown>
+    <button class="link" data-dropdown-button>Class</button>
+    <label for="c" data-dropdown-button>Class</label>
+    <div class="dropdown-menu">
+      <div class="class">
+      <select class="c" data-dropdown-button name="c">
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+  </select>
+
+</div>
+
+    </div>
+
+  </div>-->
+
+  {% csrf_token %}
+  <div class="main_class">
+  <h2 class"class_head">Select Class:</h2>
+  <select class="class" name="class">
+    <option disabled="true" selected>--Select Class--</option>
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+
+  </select>
+  <div>
+  <input type="submit" class="submit" value="Submit">
+</form>
+
+</div>
+          <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+          <script src="static/student.js"></script>
+
+        </body>
+      </html>
+</body>
+</html>

@@ -1,0 +1,156 @@
+.*{
+  margin: 0;
+  overflow: hidden;
+}
+body{
+  margin: -40px;
+  background-color: white;
+  height: 100%;
+  width:100%;
+  overflow: hidden;
+
+}
+.container{
+  position: relative;
+  width: 400px;
+  height: 40px;
+}
+.image{
+  margin: -10px;
+
+}
+.image2{
+  padding-left: 450px;
+  margin-left: 750px;
+  margin-top: -50px;
+  position: absolute;
+
+
+}
+nav{
+  color: white;
+
+  position: absolute;
+  margin-top: -557px;
+  padding: 5px;
+
+
+}
+
+a{
+  color: white;
+  padding-left: 200px;
+  font-size: 30px;
+  font-style:open sans;
+  text-decoration: none;
+}
+
+.text{
+  color: black;
+
+}
+
+
+
+h1{
+  padding-left: 60px;
+  font-size: 50px;
+  margin-top: -350px;
+  position: absolute;
+  color: white;
+
+}
+h2{
+  font-size: 30px;
+}
+
+h3{
+  color: white;
+  padding-left: 100px;
+  margin: -1px;
+  position: absolute;
+  margin-top: -400px;
+
+}
+form{
+
+  margin-left: 1000px;
+  margin-top: -250px;
+
+}
+p{
+  color: white;
+  font-size: 20px;
+  padding-left: 70px;
+  position: absolute;
+  margin-top: -300px;
+  text-align:left;
+}
+.submit{
+  border-radius: 0;
+  background-color:#1C2B60;
+  color: white;
+  font-size: 20px;
+  padding-left: 60px;
+  padding-right: 60px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin-left: 100px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.date input{
+  margin-top: -50px;
+  margin-left: 160px;
+}
+
+.dropdown{
+  position: relative;
+}
+.main_class h2{
+  margin-top: -10px;
+}
+.main_class select{
+  margin-top: -48px;
+  margin-left: 165px;
+
+}
+.dropdown-menu{
+  position: absolute;
+  left:0;
+  top:calc(100%+0.25rem);
+  background-color: white;
+  padding: .75rem;
+  border-radius: .25rem;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .5);
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(-10px);
+  transition: opacity 150ms ease-in-out,transform 150ms ease-in-out;
+
+}
+.link{
+  background: none;
+  border: none;
+  text-decoration: none;
+  cursor: pointer;
+}
+.dropdown.active > .link{
+  color: black;
+}
+.dropdown.active > .link + .dropdown-menu{
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+.rectangle{
+  height: 600px;
+  width:1000px;
+  background-color: #1C2B60;
+  border-radius: 50px;
+  position: relative;
+  margin-left: -25px;
+  margin-top: -10px;
+}

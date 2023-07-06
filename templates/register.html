@@ -1,0 +1,40 @@
+{% load static %}
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="{% static '/css/register.css'%}">
+</head>
+<body>
+  <div class="design">
+    <img class="design1" src="{% static '/img/register1.jpg' %}" alt="">
+
+    <div class="text">
+      <img class="logo" src="{% static '/img/download.png' %}" alt="">
+      <h1>Let's get you set up</h1>
+      <p>It will only take you a minute to start working</p>
+
+    </div>
+        <img class="design2" src="{% static '/img/register2.jpg' %}" alt="">
+  </div>
+  <div class="form">
+<h1 class="staff">STAFF REGISTRATION</h1>
+<div class="input_fields">
+  <form action="register" method="post">
+  <input type="text" name="staff_id" placeholder="Staff ID">
+  {% csrf_token %}
+  <input type="text" name="username" placeholder="Username">
+  <input type="email" name="email" placeholder="Email">
+  <input type="password" name="password" placeholder="Password">
+  <button type="submit" class="submit"name="submit">Register</button>
+
+  <p>Already have account?  <a href="/login">Login</a></p>
+  </form>
+</div>
+
+<div>
+{% for message in messages %}
+<h1>{{message}}</h1>
+{% endfor %}
+</div>
+</div>
+</body>
+</html>
